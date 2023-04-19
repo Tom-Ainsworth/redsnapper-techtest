@@ -1,0 +1,96 @@
+$primary-color: #462681;
+$secondary-color: #ffffff;
+
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url("assets/fonts/source-sans-pro/SourceSansPro-Regular.otf")
+        format("opentype");
+}
+
+@font-face {
+    font-family: "SourceSansPro-Black";
+    src: url("assets/fonts/source-sans-pro/SourceSansPro-Black.otf")
+        format("opentype");
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+    font-family: "SourceSansPro-Regular", sans-serif;
+    color: $primary-color;
+}
+
+.card-container {
+    position: relative;
+    height: 667px;
+    width: 375px;
+    .card-image {
+        z-index: 0;
+    }
+
+    .link-back {
+        text-decoration: none;
+        color: $secondary-color;
+        z-index: 1;
+        position: absolute;
+        margin-top: 15.44px;
+        margin-left: 15.44px;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 22px;
+            width: 22px;
+        }
+
+        span {
+            font-family: "SourceSansPro-Regular", sans-serif;
+        }
+    }
+}
+
+.card-info-container {
+    position: absolute;
+    height: 475px;
+    bottom: 0%;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+    background-color: white;
+
+    .card-info {
+        position: relative;
+        padding: 20px 25px 0px;
+
+        .card-title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            h2 {
+                margin: 0px;
+                font-family: "SourceSansPro-Black", sans-serif;
+                font-size: 44px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .btn {
+        border: none;
+        background-color: transparent;
+        color: $primary-color;
+        padding: 0px;
+    }
+
+    .btn-follow {
+        display: flex;
+        align-items: center;
+        font-family: "SourceSansPro-Black";
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+}

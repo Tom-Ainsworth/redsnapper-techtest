@@ -4,24 +4,80 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.styles.css" />
         <title>Document</title>
     </head>
     <body>
         <div class="card-container">
-            <picture>
+            <a type="button" href="#" class="link-back">
+                <img src="assets/back-arrow.svg" alt="Back" />
+                <span>Back</span>
+            </a>
+            <!-- picture used for more responsive design rather than media queries -->
+            <picture class="card-image">
                 <source
                     media="(min-width:650px)"
-                    srcset="./assets/header-image/header-image-large.png"
+                    srcset="assets/header-image/header-image-large.png"
                 />
                 <source
-                    media="(min-width:465px)"
-                    srcset="./assets/header-image/header-image-medium.png"
+                    media="(min-width:450px)"
+                    srcset="assets/header-image/header-image-medium.png"
                 />
                 <img
-                    src="./assets/header-image/header-image-small.png"
+                    src="assets/header-image/header-image-small.png"
                     alt="Steve Jobs profile picture"
                 />
             </picture>
+            <div class="card-info-container">
+                <div class="card-info">
+                    <div class="card-title">
+                        <h2>Steve Jobs</h2>
+                        <button type="button" class="btn btn-more">
+                            <img
+                                src="assets/more-icon.svg"
+                                alt="More options"
+                            />
+                        </button>
+                    </div>
+                    <button type="submit" class="btn btn-follow">
+                        <img src="assets/follow-icon.svg" alt="follow icon" />
+                        Follow
+                    </button>
+
+                    <hr />
+                    <div class="card-stats">
+                        <div>
+                            <p>313</p>
+                            <p>patents</p>
+                        </div>
+                        <div>
+                            <p>1m 50k</p>
+                            <p>followers</p>
+                        </div>
+                        <div>
+                            <p>361</p>
+                            <p>following</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3>categories</h3>
+
+                    <div>
+                        <div>electronic devices</div>
+                        <hr />
+                        <div>design</div>
+                        <hr />
+                        <div>transportation</div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("assets/fonts/source-sans-pro/SourceSansPro-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("assets/fonts/source-sans-pro/SourceSansPro-Black.otf") format("opentype");
+}
+body {
+  margin: 0px;
+  border: 0px;
+  font-family: "SourceSansPro-Regular", sans-serif;
+  color: #462681;
+}
+
+.card-container {
+  position: relative;
+  height: 667px;
+  width: 375px;
+}
+.card-container .card-image {
+  z-index: 0;
+}
+.card-container .link-back {
+  text-decoration: none;
+  color: #ffffff;
+  z-index: 1;
+  position: absolute;
+  margin-top: 15.44px;
+  margin-left: 15.44px;
+  display: flex;
+  align-items: center;
+}
+.card-container .link-back img {
+  height: 22px;
+  width: 22px;
+}
+.card-container .link-back span {
+  font-family: "SourceSansPro-Regular", sans-serif;
+}
+
+.card-info-container {
+  position: absolute;
+  height: 475px;
+  bottom: 0%;
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  background-color: white;
+}
+.card-info-container .card-info {
+  position: relative;
+  padding: 20px 25px 0px;
+}
+.card-info-container .card-info .card-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-info-container .card-info .card-title h2 {
+  margin: 0px;
+  font-family: "SourceSansPro-Black", sans-serif;
+  font-size: 44px;
+  display: inline-block;
+}
+.card-info-container .btn {
+  border: none;
+  background-color: transparent;
+  color: #462681;
+  padding: 0px;
+}
+.card-info-container .btn-follow {
+  display: flex;
+  align-items: center;
+  font-family: "SourceSansPro-Black";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.card-info-container .btn-follow img {
+  margin-right: 5px;
+}/*# sourceMappingURL=index.styles.css.map */
