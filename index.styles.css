@@ -17,6 +17,7 @@ body {
   position: relative;
   height: 667px;
   width: 375px;
+  box-shadow: 0px 0px 10px #e5e5e5;
 }
 .card-container .card-image {
   z-index: 0;
@@ -32,20 +33,42 @@ body {
   align-items: center;
 }
 .card-container .link-back img {
-  height: 22px;
-  width: 22px;
+  height: 31px;
+  width: 31px;
 }
 .card-container .link-back span {
   font-family: "SourceSansPro-Regular", sans-serif;
+  font-size: 18px;
+  margin-left: 5px;
 }
 
 .card-info-container {
   position: absolute;
-  height: 475px;
+  height: 450px;
   bottom: 0%;
   width: 100%;
   border-radius: 40px 40px 0px 0px;
   background-color: white;
+}
+.card-info-container .text-small {
+  font-family: "SourceSansPro-Black", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.card-info-container .btn {
+  border: none;
+  background-color: transparent;
+  color: #462681;
+  padding: 0px;
+}
+.card-info-container .btn-follow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.card-info-container .btn-follow img {
+  margin-right: 5px;
 }
 .card-info-container .card-info {
   position: relative;
@@ -62,19 +85,44 @@ body {
   font-size: 44px;
   display: inline-block;
 }
-.card-info-container .btn {
-  border: none;
-  background-color: transparent;
-  color: #462681;
-  padding: 0px;
-}
-.card-info-container .btn-follow {
+.card-info-container .card-info .card-stats {
   display: flex;
-  align-items: center;
-  font-family: "SourceSansPro-Black";
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  justify-content: space-around;
+  font-family: "SourceSansPro-Black", sans-serif;
+  border-top: 1px solid #462681;
+  border-bottom: 1px solid #462681;
+  padding: 6px 0px 11px;
 }
-.card-info-container .btn-follow img {
-  margin-right: 5px;
+.card-info-container .card-info .card-stats .stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-info-container .card-info .card-stats h4 {
+  font-size: 24px;
+  margin: 0px;
+}
+.card-info-container .card-info .card-stats p {
+  margin: 0px;
+}
+.card-info-container .card-info h3 {
+  margin-top: 20px;
+}
+.card-info-container .card-info .card-categories {
+  display: flex;
+  flex-direction: column;
+}
+.card-info-container .card-info .card-categories .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 5px;
+  font-family: "SourceSansPro-Regular", sans-serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  border-bottom: 1px solid #462681;
+}
+.card-info-container .card-info .card-categories h4 {
+  margin: 0px;
 }/*# sourceMappingURL=index.styles.css.map */

@@ -1,5 +1,6 @@
 $primary-color: #462681;
 $secondary-color: #ffffff;
+$tertiary-color: #e5e5e5;
 
 @font-face {
     font-family: "SourceSansPro-Regular";
@@ -24,6 +25,8 @@ body {
     position: relative;
     height: 667px;
     width: 375px;
+    box-shadow: 0px 0px 10px $tertiary-color;
+
     .card-image {
         z-index: 0;
     }
@@ -39,23 +42,49 @@ body {
         align-items: center;
 
         img {
-            height: 22px;
-            width: 22px;
+            height: 31px;
+            width: 31px;
         }
 
         span {
             font-family: "SourceSansPro-Regular", sans-serif;
+            font-size: 18px;
+            margin-left: 5px;
         }
     }
 }
 
 .card-info-container {
     position: absolute;
-    height: 475px;
+    height: 450px;
     bottom: 0%;
     width: 100%;
     border-radius: 40px 40px 0px 0px;
     background-color: white;
+
+    .text-small {
+        font-family: "SourceSansPro-Black", sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+
+    .btn {
+        border: none;
+        background-color: transparent;
+        color: $primary-color;
+        padding: 0px;
+    }
+
+    .btn-follow {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            margin-right: 5px;
+        }
+    }
 
     .card-info {
         position: relative;
@@ -73,24 +102,54 @@ body {
                 display: inline-block;
             }
         }
-    }
 
-    .btn {
-        border: none;
-        background-color: transparent;
-        color: $primary-color;
-        padding: 0px;
-    }
+        .card-stats {
+            display: flex;
+            justify-content: space-around;
+            font-family: "SourceSansPro-Black", sans-serif;
+            border-top: 1px solid $primary-color;
+            border-bottom: 1px solid $primary-color;
+            padding: 6px 0px 11px;
 
-    .btn-follow {
-        display: flex;
-        align-items: center;
-        font-family: "SourceSansPro-Black";
-        text-transform: uppercase;
-        margin-bottom: 20px;
+            .stat {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
-        img {
-            margin-right: 5px;
+            h4 {
+                font-size: 24px;
+                margin: 0px;
+            }
+
+            p {
+                margin: 0px;
+            }
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .card-categories {
+            display: flex;
+            flex-direction: column;
+
+            .category {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 21px 5px;
+                font-family: "SourceSansPro-Regular", sans-serif;
+                text-transform: capitalize;
+                font-size: 25px;
+                border-bottom: 1px solid $primary-color;
+            }
+
+            h4 {
+                margin: 0px;
+            }
         }
     }
 }
